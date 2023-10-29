@@ -21,8 +21,8 @@ body {
 
 .casilla {
     background-color: aliceblue;
-    width: 20vh;
-    height: 20vh;
+    width: 22vh;
+    height: 22vh;
     border: 1px solid black;
     box-shadow: 0 0 5px 1px #cec46e;
     padding-left: 0px;
@@ -34,16 +34,16 @@ body {
 img {
     display: grid;
     place-content: center;
-    height: 20vh;
-    width: 20h;
+    height: 22vh;
+    width: 22vh;
  
 }
 
 
 #resultado1{
     
-    width: 200px;
-    height: 30px;
+    width: 30vh;
+    height: 8vh;
     border: 1px solid black;
     background-color:  rgb(169, 172, 196);
     box-shadow: 0 0 5px 1px #FFF9C4;
@@ -60,6 +60,6 @@ button{
     display: grid;
     place-content: center;
     background-color: rgb(169, 172, 196);
-    width: 200px;
-    height: 30px;
+    width: 30vh;
+    height: 8vh;
 }
