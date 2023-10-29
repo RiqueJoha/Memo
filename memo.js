@@ -73,10 +73,11 @@ function seleccionar(elemento) {
 
     const imgURL = elemento.getAttribute("data-imagen");
     elemento.innerHTML = `<img class="col casilla" src="${imgURL}" alt=""></img>`;
+    
   
 
 
-    if (clicks <= 2) {
+    if (clicks <2) {
         if (ImgSeleccionada === 0) {
             ImgSeleccionada = elemento;
         } else {
@@ -94,9 +95,10 @@ function seleccionar(elemento) {
                         `
                         
                     }elemento.style.pointerEvents = "none";
-                        juegoGanado = true;
+                        
                 }, 100);
                 ImgSeleccionada = 0;
+                
             } else {
 
                 setTimeout(() => {
@@ -108,6 +110,7 @@ function seleccionar(elemento) {
         }
 
     }
+    
 }
 
 function volveAJugar() {
@@ -115,7 +118,6 @@ function volveAJugar() {
     pResultado2.innerHTML = "";
     clicks = 0;
     aciertos = 0;
-    juegoGanado = false;
     generar()
 } 
 
